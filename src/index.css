@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+}
+
+.nav_bar {
+  display: flex;
+  background: yellowgreen;
+  padding: 10px 20px;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.nav_bar img {
+  color: grey;
+  font-size: 10px;
+  width: 50px;
+  height: 50px;
+}
+.nav_bar span {
+  font-size: 30px;
+  color: black;
+  margin-left: 20px;
+  font-style: oblique;
+  font-family: cursive;
+  font-weight: 700;
+}
+
+.topheading {
+  display: flex;
+  font-size: 25px;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.topheading button {
+  font-size: 25px;
+  border-radius: 5px;
+  color: green;
+  border: 2px solid green;
+}
+
+.album_grid {
+  grid-gap: 30px;
+  display: grid;
+  gap: 30px;
+  grid-auto-flow: row;
+  grid-auto-rows: 230px;
+  grid-template: repeat(1, 230px) / repeat(auto-fit, minmax(230px, 0.9fr));
+  margin-bottom: 100px;
+}
+
+.album_card {
+  align-items: center;
+  border: 5px solid #eee;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  margin-block: 30px;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+
+.album_card:hover {
+  border: 5px solid green;
+}
+
+.album_card img {
+  margin-bottom: 45px;
+  width: 50px;
+}
+
+.album_card .album_title {
+  background-color: #eee;
+  font-size: 1.1rem;
+  font-weight: 700;
+  justify-self: baseline;
+  padding-block: 5px;
+  text-align: center;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.album_card:hover .album_title {
+  background-color: green;
+  color: white;
+}
+
+.editting_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.editting_button button {
+  color: green;
+  margin: 20px;
+  font-weight: 800;
+}
+.outerdiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Add_album_container {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 35px;
+  padding: 20px;
+  width: 50vw;
+  justify-content: space-around;
+  align-items: center;
+}
+.Add_album_inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.Add_album_inputs input {
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid green;
+}
+.divbutton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Add_album_inputs button {
+  height: 35px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid green;
+  color: white;
+  background-color: green;
+  font-size: 20px;
+}
